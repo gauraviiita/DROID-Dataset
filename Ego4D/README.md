@@ -41,3 +41,27 @@ Secret Access Key
 Default Region (e.g., eu-central-1) for Germany
 Output Format (e.g., json)
 ```
+# Step 4: Download the dataset
+
+## Step 4.1: Download downsampled videos (dataset=video_540ss)
+```
+ego4d --output_directory="/home/dr/Desktop/Gaurav/Ego4d/" --datasets video_540ss
+```
+## Step 4.2: A single video
+```
+ego4d --output_directory="/home/dr/Desktop/Gaurav/Ego4d/" --video_uids 2e509e19-90ec-40f0-904e-2f5d0057ed6a --verbose
+```
+
+## Step 4.3: Features (e.g slow-fast)
+```
+ego4d --output_directory="/home/dr/Desktop/Gaurav/Ego4d/" --datasets slowfast8x8_r101_k400
+```
+
+## Step 4.4: A list of video uids from a file
+```
+ego4d --output_directory="/home/dr/Desktop/Gaurav/Ego4d/" --video_uid_file <filename>
+```
+## Step 4.5: A single benchmark set
+```
+ego4d --output_directory="/home/dr/Desktop/Gaurav/Ego4d/" --benchmarks vq
+```
